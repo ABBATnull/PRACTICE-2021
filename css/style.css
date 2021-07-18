@@ -1,0 +1,121 @@
+/*Initialisation*/
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #333;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0px;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.clearfix {display: inline-block;}
+
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+
+.main-left-col-title-block {
+	display: inline-block;
+	top: 0px;
+	height: 900px;
+	width: 700px;
+	background: #FFFFFF;
+}
+
+
+.main-right-col {
+	width: 875px;
+	height: 900px;
+	/*left: 565px;*/
+	top: 0px;
+	background-image: url('../images/bar.jpg');
+	display: inline-block;
+	/*opacity: 23%;*/
+	position: absolute;
+	background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.centered-text{
+	text-align: center;
+	padding-top: 50%;
+	padding-bottom: 50%;
+}
+
+.left-col-header-container {
+	flex-direction: row;
+	justify-content: space-between;
+	display: flex;
+}
+
+.bauart-logo {
+	margin-top: 56px;
+	margin-left: 80px;
+	width: 158px;
+	height: 75px;
+	background-image: url('../images/logo.png');
+	display: inline-block;
+}
+
+.right-col-header-container {
+	margin-left: 532px;
+	margin-right: 72px;
+	margin-top: 65px;
+	flex-direction: row;
+	justify-content: space-between;
+	display: flex;
+}
+
+.header-link-item {
+	color: #FFFFFF;
+}
+
+.lang-change {
+	margin-top: 65px;
+	margin-left: 80px;
+	margin-right: 49px;
+	display: inline-block;
+	text-align: center;
+}
+
+.restaurant-list {
+	flex-wrap: wrap;
+	margin-left: 84px;
+	margin-top: 46px;
+	margin-right: 73px;
+	justify-content: space-between;
+	display: flex;
+}
+
+.restaurant-logo-item {
+	margin-bottom: 83px;
+	margin-right: 26px;
+	width: 154px;
+	height: 154px;
+	background-color: #FFFFFF;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.footer {
+	flex-direction: row-reverse;
+	display: flex;
+	margin-right: 162px;
+}
+
+.inverted-colors {
+	filter: invert(1);
+}

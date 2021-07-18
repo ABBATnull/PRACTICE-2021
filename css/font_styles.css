@@ -1,0 +1,69 @@
+/*TYPEFACES
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Roboto Slab', serif;
+
+*/
+
+/*montserrat*/
+
+.montserrat-bold-24px{
+	font-size: 24px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.montserrat-regular-20px{
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.montserrat-regular-16px{
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.montserrat-regular-14px{
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.montserrat-regular-48px{
+	font-size: 48px;
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*robotoSlab*/
+
+.robotoSlab-regular-20px{
+	font-size: 20px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.robotoSlab-regular-16px{
+	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.robotoSlab-regular-14px{
+	font-size: 14px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.robotoSlab-regular-12px{
+	font-size: 12px;
+	font-family: 'Roboto Slab', serif;
+	letter-spacing: 1px;
+}
+
+
+.robotoSlab-regular-30px{
+	font-size: 30px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.bold {
+	font-weight: 700;
+}
