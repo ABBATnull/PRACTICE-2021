@@ -3,8 +3,8 @@
  <head>
   <title>BAUART Meal</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- СТИЛИ БЛОКОВ -->
-  <link rel="stylesheet" type="text/css" href="css/font_styles.css"> <!-- СТИЛИ ШРИФТОВ -->
+  <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- ÑÒÈËÈ ÁËÎÊÎÂ -->
+  <link rel="stylesheet" type="text/css" href="css/font_styles.css"> <!-- ÑÒÈËÈ ØÐÈÔÒÎÂ -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
 
   <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
@@ -12,9 +12,9 @@
   
  </head>
  <body>
- 	<div class="clearfix"> <!-- ОБЕРТКА ДЛЯ ОБНУЛЕНИЯ БРАУЗЕРНЫХ ПАРАМЕТРОВ БЛОКОВ, ИХ ПАДДИНГОВ И РАСПОЛОЖЕНИЯ -->
+ 	<div class="clearfix"> <!-- ÎÁÅÐÒÊÀ ÄËß ÎÁÍÓËÅÍÈß ÁÐÀÓÇÅÐÍÛÕ ÏÀÐÀÌÅÒÐÎÂ ÁËÎÊÎÂ, ÈÕ ÏÀÄÄÈÍÃÎÂ È ÐÀÑÏÎËÎÆÅÍÈß -->
 
- 		<!-- НАЧАЛО ЛЕВОЙ КОЛОНКИ САЙТА -->
+ 		<!-- ÍÀ×ÀËÎ ËÅÂÎÉ ÊÎËÎÍÊÈ ÑÀÉÒÀ -->
 	 	<div class="main-left-col-title-block">
 	 		<div class="left-col-header-container">
 	 			<div class="bauart-logo"></div>
@@ -24,17 +24,19 @@
 		 					<img v-bind:src=choosen_rest_img style="border-radius: 5px;">
 		 				</div>
 	 	</div>
-		<!-- КОНЕЦ ЛЕВОЙ КОЛОНКИ САЙТА -->
+		<!-- ÊÎÍÅÖ ËÅÂÎÉ ÊÎËÎÍÊÈ ÑÀÉÒÀ -->
 
-		<!-- НАЧАЛО ПРАВОЙ КОЛОНКИ САЙТА -->
+		<!-- ÍÀ×ÀËÎ ÏÐÀÂÎÉ ÊÎËÎÍÊÈ ÑÀÉÒÀ -->
 	 		<div class="main-right-col">
 	 			<div class="right-col-header-container robotoSlab-regular-12px bold">
 	 				<a href="#" class="header-link-item">Like</a>
 	 				<a href="#" class="header-link-item">Takeaway</a>
 	 				<a href="#" class="header-link-item">Promotions</a>
 	 			</div>
-<button @click="choice1">Фото в левую колонку</button>
-<!-- ниже choice vue не видит, хотя .clearfix div оборачивает все от начала и до футера -->
+<button @click="choice1">
+	<a href="menu.html">Фото в левую колонку</a>
+</button>
+<!-- íèæå choice vue íå âèäèò, õîòÿ .clearfix div îáîðà÷èâàåò âñå îò íà÷àëà è äî ôóòåðà -->
 	 			<div class="restaurant-list">
 	 				<div  class="restaurant-logo-item">
 	 					
@@ -71,7 +73,7 @@
 	 				</a>
 	 			</div>
 	 		</div>
-	 		<!-- КОНЕЦ ПРАВОЙ КОЛОНКИ САЙТА -->
+	 		<!-- ÊÎÍÅÖ ÏÐÀÂÎÉ ÊÎËÎÍÊÈ ÑÀÉÒÀ -->
 	</div>
  <script src="vue/load_all_res_img.js"></script>
  <script src="vue/load_choosen_res_img.js"></script>
