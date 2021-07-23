@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>BAUART Meal</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- СТИЛИ БЛОКОВ -->
+  <link rel="stylesheet" type="text/css" href="css/font_styles.css"> <!-- СТИЛИ ШРИФТОВ -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+  
+ </head>
+ <body>
+ 	<div class="clearfix"> <!-- ОБЕРТКА ДЛЯ ОБНУЛЕНИЯ БРАУЗЕРНЫХ ПАРАМЕТРОВ БЛОКОВ, ИХ ПАДДИНГОВ И РАСПОЛОЖЕНИЯ -->
+
+ 		<!-- НАЧАЛО ЛЕВОЙ КОЛОНКИ САЙТА -->
+	 	<div class="main-left-col-title-block">
+	 		<div class="left-col-header-container">
+	 			<div class="bauart-logo"></div>
+		 			<div class="lang-change robotoSlab-regular-16px bold">EN</div>
+	 		</div>
+		 				<div class="centered-text montserrat-regular-48px">
+		 					<img src="https://www.delivery-club.ru/naturmort/608c8b95484ed_480x300.jpg" style="border-radius: 5px;">
+		 				</div>
+	 	</div>
+		<!-- КОНЕЦ ЛЕВОЙ КОЛОНКИ САЙТА -->
+
+		<!-- НАЧАЛО ПРАВОЙ КОЛОНКИ САЙТА -->
+	 		<div class="main-right-col">
+	 			<div class="menu-list">
+
+
+	 				<div class="item-container-menu">
+	 					<div class="left-col-menu">
+	 						<img v-bind:src=imgpath1 width="115" height="110">
+	 					</div>
+	 						<div class="right-col-menu">
+	 							<div class="food_name robotoSlab-regular-12px">{{name1}}
+	 								<div class="food_rpice robotoSlab-regular-12px"><p>{{price1}}
+
+	 								</div>
+	 							</div>
+	 						</div>
+	 				</div>
+
+	 				<div class="item-container-menu">
+	 					<div class="left-col-menu">
+	 						<img v-bind:src=imgpath2 width="115" height="110">
+	 					</div>
+	 						<div class="right-col-menu">
+	 							<div class="food_name robotoSlab-regular-12px">{{name2}}
+	 								<div class="food_rpice robotoSlab-regular-12px"><p>{{price2}}
+
+	 								</div>
+	 							</div>
+	 						</div>
+	 				</div>
+
+	 				<div class="item-container-menu">
+	 					<div class="left-col-menu">
+	 						<img v-bind:src=imgpath3 width="115" height="110">
+	 					</div>
+	 						<div class="right-col-menu">
+	 							<div class="food_name robotoSlab-regular-12px">{{name3}}
+	 								<div class="food_rpice robotoSlab-regular-12px"><p>{{price3}}
+
+	 								</div>
+	 							</div>
+	 						</div>
+	 				</div>
+
+	 				<div class="item-container-menu">
+	 					<div class="left-col-menu">
+	 						<img v-bind:src=imgpath4 width="115" height="110">
+	 					</div>
+	 						<div class="right-col-menu">
+	 							<div class="food_name robotoSlab-regular-12px" >{{name4}}
+	 								<div class="food_rpice robotoSlab-regular-12px"><p>{{price4}}
+
+	 								</div>
+	 							</div>
+	 						</div>
+	 				</div>
+
+	 				<div class="item-container-menu">
+	 					<div class="left-col-menu">
+	 						<img v-bind:src=imgpath5 width="115" height="110">
+	 					</div>
+	 						<div class="right-col-menu">
+	 							<div class="food_name robotoSlab-regular-12px">{{name5}}
+	 								<div class="food_rpice robotoSlab-regular-12px"><p>{{price5}}
+
+	 								</div>
+	 							</div>
+	 						</div>
+	 				</div>
+
+	 				<div class="item-container-menu">
+	 					<div class="left-col-menu">
+	 						<img v-bind:src=imgpath6 width="115" height="110">
+	 					</div>
+	 						<div class="right-col-menu">
+	 							<div class="food_name robotoSlab-regular-12px">{{name6}}
+	 								<div class="food_rpice robotoSlab-regular-12px"><p>{{price6}}
+
+	 								</div>
+	 							</div>
+	 						</div>
+	 				</div>
+
+	 				<div class="item-container-menu">
+	 					<div class="left-col-menu">
+	 						<img v-bind:src=imgpath7 width="115" height="110">
+	 					</div>
+	 						<div class="right-col-menu">
+	 							<div class="food_name robotoSlab-regular-12px">{{name7}}
+	 								<div class="food_rpice robotoSlab-regular-12px"><p>{{price7}}
+
+	 								</div>
+	 							</div>
+	 						</div>
+	 				</div>
+
+	 				<div class="item-container-menu">
+	 					<div class="left-col-menu">
+	 						<img src="images/arrow-next-page.png" width="115" height="110">
+	 					</div>
+	 						<div class="right-col-menu">
+	 							<div class="food_name robotoSlab-regular-12px">имя еды
+	 								<div class="food_rpice robotoSlab-regular-12px"><p>цена еды
+
+	 								</div>
+	 							</div>
+	 						</div>
+	 				</div>
+
+	 				<div class="item-container-menu">
+	 					<div class="left-col-menu">
+	 						<img src="images/arrow-next-page.png" width="115" height="110">
+	 					</div>
+	 						<div class="right-col-menu">
+	 							<div class="food_name robotoSlab-regular-12px">имя еды
+	 								<div class="food_rpice robotoSlab-regular-12px"><p>цена еды
+
+	 								</div>
+	 							</div>
+	 						</div>
+	 				</div>
+
+	 				<div class="item-container-menu">
+	 					<div class="left-col-menu">
+	 						<img src="images/arrow-next-page.png" width="115" height="110">
+	 					</div>
+	 						<div class="right-col-menu">
+	 							<div class="food_name robotoSlab-regular-12px">имя еды
+	 								<div class="food_rpice robotoSlab-regular-12px"><p>цена еды
+
+	 								</div>
+	 							</div>
+	 						</div>
+	 				</div>
+
+	 				<div class="item-container-menu">
+	 					<div class="left-col-menu">
+	 						<img src="images/arrow-next-page.png" width="115" height="110">
+	 					</div>
+	 						<div class="right-col-menu">
+	 							<div class="food_name robotoSlab-regular-12px">имя еды
+	 								<div class="food_rpice robotoSlab-regular-12px"><p>цена еды
+
+	 								</div>
+	 							</div>
+	 						</div>
+	 				</div>
+
+	 				<div class="item-container-menu">
+	 					<div class="left-col-menu">
+	 						<img src="images/arrow-next-page.png" width="115" height="110">
+	 					</div>
+	 						<div class="right-col-menu">
+	 							<div class="food_name robotoSlab-regular-12px">имя еды
+	 								<div class="food_rpice robotoSlab-regular-12px"><p>цена еды
+
+	 								</div>
+	 							</div>
+	 						</div>
+	 				</div>
+
+
+
+
+
+	 			</div>
+	 			<div class="footer" >
+	 				<a href="#">
+	 					<img src="images/arrow-next-page.png" class="inverted-colors"  width="42" height="42">
+	 				</a>
+	 			</div>
+	 		</div>
+	 		<!-- КОНЕЦ ПРАВОЙ КОЛОНКИ САЙТА -->
+	</div>
+ <script src="vue/load_menu.js"></script>
+ </body>
+</html>
