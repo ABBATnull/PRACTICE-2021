@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
  <head>
+  <title>BAUART Meal</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- СТИЛИ БЛОКОВ -->
   <link rel="stylesheet" type="text/css" href="css/font_styles.css"> <!-- СТИЛИ ШРИФТОВ -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
-  <title>BAUART Meal</title>
-  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+  
  </head>
  <body>
  	<div class="clearfix"> <!-- ОБЕРТКА ДЛЯ ОБНУЛЕНИЯ БРАУЗЕРНЫХ ПАРАМЕТРОВ БЛОКОВ, ИХ ПАДДИНГОВ И РАСПОЛОЖЕНИЯ -->
@@ -17,7 +20,9 @@
 	 			<div class="bauart-logo"></div>
 		 			<div class="lang-change robotoSlab-regular-16px bold">EN</div>
 	 		</div>
-		 				<div class="centered-text montserrat-regular-48px">Restaurants</div>
+		 				<div class="centered-text montserrat-regular-48px">{{Restaurants}}
+		 					<img v-bind:src=choosen_rest_img style="border-radius: 5px;">
+		 				</div>
 	 	</div>
 		<!-- КОНЕЦ ЛЕВОЙ КОЛОНКИ САЙТА -->
 
@@ -28,52 +33,47 @@
 	 				<a href="#" class="header-link-item">Takeaway</a>
 	 				<a href="#" class="header-link-item">Promotions</a>
 	 			</div>
-
+<button @click="choice1">Фото в левую колонку</button>
+<!-- ниже choice vue не видит, хотя .clearfix div оборачивает все от начала и до футера -->
 	 			<div class="restaurant-list">
-	 				<div class="restaurant-logo-item restaurant-choosen">
-	 					<img src="images\test.jpg" width="150" height="150">
+	 				<div  class="restaurant-logo-item">
+	 					
+	 					<img v-bind:src=imgpath1 width="154" height="154" style="border-radius: 5px;" >
 	 				</div>
-	 				<div class="restaurant-logo-item restaurant-choosen">
-	 					<img src="images\test.jpg" width="150" height="150">
+	 				<div class="restaurant-logo-item" >
+	 					<img v-bind:src=imgpath2 width="154" height="154" style="border-radius: 5px;">
 	 				</div>
-	 				<div class="restaurant-logo-item restaurant-choosen">
-	 					<img src="images\test.jpg" width="150" height="150">
+	 				<div class="restaurant-logo-item">
+	 					<img v-bind:src=imgpath3 width="154" height="154" style="border-radius: 5px;">
 	 				</div>
-	 				<div class="restaurant-logo-item restaurant-choosen">
-	 					<img src="images\test.jpg" width="150" height="150">
+	 				<div class="restaurant-logo-item">
+	 					<img v-bind:src=imgpath4 width="154" height="154" style="border-radius: 5px;">
 	 				</div>
-	 				<div class="restaurant-logo-item restaurant-choosen">
-	 					<img src="images\test.jpg" width="150" height="150">
+	 				<div class="restaurant-logo-item">
+	 					<img v-bind:src=imgpath5 width="154" height="154" style="border-radius: 5px;">
 	 				</div>
-	 				<div class="restaurant-logo-item restaurant-choosen">
-	 					<img src="images\test.jpg" width="150" height="150">
+	 				<div class="restaurant-logo-item">
+	 					<img v-bind:src=imgpath6 width="154" height="154" style="border-radius: 5px;">
 	 				</div>
-	 				<div class="restaurant-logo-item restaurant-choosen">
-	 					<img src="images\test.jpg" width="150" height="150">
+	 				<div class="restaurant-logo-item">
+	 					<img v-bind:src=imgpath7 width="154" height="154" style="border-radius: 5px;">
 	 				</div>
-	 				<div class="restaurant-logo-item restaurant-choosen">
-	 					<img src="images\test.jpg" width="150" height="150">
+	 				<div class="restaurant-logo-item">
+	 					<img v-bind:src=imgpath8 width="154" height="154" style="border-radius: 5px;">
 	 				</div>
-	 				<div class="restaurant-logo-item restaurant-choosen">
-	 					<img src="images\test.jpg" width="150" height="150">
+	 				<div class="restaurant-logo-item">
+	 					<img v-bind:src=imgpath9 width="154" height="154" style="border-radius: 5px;">
 	 				</div>
-
 	 			</div>
-	 			<div class="footer">
+	 			<div class="footer" >
 	 				<a href="#">
 	 					<img src="images/arrow-next-page.png" class="inverted-colors"  width="42" height="42">
 	 				</a>
 	 			</div>
 	 		</div>
 	 		<!-- КОНЕЦ ПРАВОЙ КОЛОНКИ САЙТА -->
- 	</div>
-
-
-<script type="text/javascript">
-	$('.restaurant-choosen').click (function(){
-		alert ('был выбран ресторан');
-	});
-</script>>
-
+	</div>
+ <script src="vue/load_all_res_img.js"></script>
+ <script src="vue/load_choosen_res_img.js"></script>
  </body>
 </html>
